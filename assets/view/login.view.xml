@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="assets.controller.login"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+		
+		
+		<l:VerticalLayout class="sapUiContentPadding" width="30%" id="hatamesaj">
+			
+			<Label text="E-mail" labelFor="emailInput"/>
+			<Input
+				id="emailInput"
+				class="sapUiSmallMarginBottom"
+				type="Email"
+				placeholder="Email Adresiniz"
+				valueStateText=""
+				value=""/>
+				<Label text="{/email}" id="hatamesajemail"/>
+			<Label text="Şifrenizi Girin" labelFor="sifreinput"/>
+			<Input
+				liveChange = "sadecesayi"
+				id="sifreinput"
+				class="sapUiSmallMarginBottom"
+				type="Password"
+				placeholder=""
+				valueStateText=""
+				value=""/>
+				<Label text="{/pass}" id="hatamesajsifre"/>
+
+			<Button text="Üye Ol" press=".onSubmit"/>
+
+
+
+
+
+	</l:VerticalLayout>
+		
+</mvc:View>

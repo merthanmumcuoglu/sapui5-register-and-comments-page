@@ -1,0 +1,43 @@
+<mvc:View
+	controllerName="assets.controller.tablo"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+		
+		
+		<l:VerticalLayout class="sapUiContentPadding" width="30%" id="hatamesaj">
+
+
+
+
+
+
+			<Table id="mesajlar" items="{/data/0}">
+
+					<columns id="KPITable_columns">
+						<Column id="KPITable_KPIColumn" >
+							<header id="KPITable_KPIColumn_header">
+								<Label id="KPITable_KPIColumn_label" text="Kullanıcı Maili"/>
+							</header>
+						</Column>
+						<Column id="KPITable_KPINameColumn">
+							<header id="KPITable_KPINameColumn_header">
+								<Label id="KPITable_KPINameColumn_label" text="Kullanıcının Yorumu"/>
+							</header>
+						</Column>
+					</columns>
+					<ColumnListItem id="columnListItem">
+						<cells id="columnListItem_cells">
+							<Text id="columnListItem_KPIColumn" text="{email}"></Text>
+							<Text text="{mesaj}"></Text>
+						</cells>
+					</ColumnListItem>
+				</Table>
+
+
+
+
+
+	</l:VerticalLayout>
+		
+</mvc:View>
